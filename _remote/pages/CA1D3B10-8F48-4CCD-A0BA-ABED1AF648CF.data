@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>backgroundcolor</key>
+	<array>
+		<real>0.03640139102935791</real>
+		<real>0.36897248029708862</real>
+		<real>0.59397238492965698</real>
+	</array>
+	<key>iconid</key>
+	<string>C4FF126C-6831-48C9-BD0D-8D0B84C01F3B</string>
+	<key>iconisuserspecified</key>
+	<true/>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>actionconfig</key>
+			<dict>
+				<key>bundleid</key>
+				<string>com.apple.iWork.Keynote</string>
+				<key>path</key>
+				<string>/Applications/Keynote.app</string>
+			</dict>
+			<key>actionuid</key>
+			<string>remote.alfred.launchfile</string>
+			<key>buttoniconid</key>
+			<string>527F3ACF-F1AE-481E-87F3-7615D979A1B0</string>
+			<key>buttonlabel</key>
+			<string>Keynote</string>
+			<key>itemuid</key>
+			<string>61CB64FA-D274-4647-B4FB-8E806F4AFFDE</string>
+		</dict>
+		<dict/>
+		<dict/>
+		<dict/>
+		<dict/>
+		<dict>
+			<key>actionconfig</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script()
+  if running of application "Keynote" is true then	tell application "Keynote"		activate		try			if playing is false then start the front document		end try	end tellend if
+end alfred_script</string>
+			</dict>
+			<key>actionuid</key>
+			<string>remote.alfred.runapplescript</string>
+			<key>buttoniconid</key>
+			<string>131B775F-D7F6-417B-A508-26D3FFB3964F</string>
+			<key>buttonlabel</key>
+			<string>Start</string>
+			<key>itemuid</key>
+			<string>28763106-E5DC-49F4-B70A-5D8CD489DCDE</string>
+		</dict>
+		<dict>
+			<key>actionconfig</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script()
+  if running of application "Keynote" is true then	tell application "Keynote"		if playing is true then stop the front document	end tellend if
+end alfred_script</string>
+			</dict>
+			<key>actionuid</key>
+			<string>remote.alfred.runapplescript</string>
+			<key>buttoniconid</key>
+			<string>368B1765-B6DD-4E5E-A1AB-492425767B53</string>
+			<key>buttonlabel</key>
+			<string>Resume</string>
+			<key>itemuid</key>
+			<string>31E6F5A0-CE25-48E5-ADC6-4D7EEECD49BB</string>
+		</dict>
+		<dict/>
+		<dict/>
+		<dict/>
+		<dict/>
+		<dict/>
+		<dict/>
+		<dict>
+			<key>actionconfig</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script()
+  tell application "Keynote"	show previousend tell
+end alfred_script</string>
+			</dict>
+			<key>actionuid</key>
+			<string>remote.alfred.runapplescript</string>
+			<key>buttoniconid</key>
+			<string>B08CF459-00E8-448F-AC17-1A7DF6FE2261</string>
+			<key>buttonlabel</key>
+			<string>Back</string>
+			<key>itemuid</key>
+			<string>C289F2DC-FBE2-4B3F-935A-95199F899D37</string>
+		</dict>
+		<dict>
+			<key>actionconfig</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script()
+  tell application "Keynote"	show nextend tell
+end alfred_script</string>
+			</dict>
+			<key>actionuid</key>
+			<string>remote.alfred.runapplescript</string>
+			<key>buttoniconid</key>
+			<string>93E075BB-C454-4C58-A8DE-CA99B4925C15</string>
+			<key>buttonlabel</key>
+			<string>Next</string>
+			<key>itemuid</key>
+			<string>2C7EA483-F7D0-437A-86E7-DE013390015B</string>
+		</dict>
+		<dict/>
+	</array>
+	<key>subtitle</key>
+	<string></string>
+	<key>title</key>
+	<string>Keynote Remote</string>
+</dict>
+</plist>
